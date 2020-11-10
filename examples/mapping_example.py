@@ -6,7 +6,7 @@ daft.set_county("Dublin City")
 daft.set_listing_type(RentType.ANY)
 daft.set_sort_order(SortOrder.ASCENDING)
 daft.set_sort_by(SortType.PRICE)
-# must sort by price in asending order, MapVisualization class will take care of the weekly/monthly value mess
+# must sort by price in ascending order, MapVisualization class will take care of the weekly/monthly value mess
 daft.set_max_price(2400)
 daft.set_min_beds(2)
 daft.set_max_beds(2)
@@ -18,7 +18,7 @@ print(
         str(len(listings))
     )
 )
-print("Igonre the error message")
+print("Ignore the error message")
 for listing in listings:
     try:
         if listing.search_type != "rental":

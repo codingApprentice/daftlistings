@@ -26,7 +26,7 @@ print(
         str(len(listings))
     )
 )
-print("Igonre the error message")
+print("Ignore the error message")
 
 # time the translation
 start = time.time()

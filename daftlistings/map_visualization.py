@@ -5,8 +5,8 @@ import branca.colormap as cm
 class MapVisualization:
     """
     This class takes a crawled daft dataset which consists of 
-    price, longitute, latitude, number of bedrooms, number of bathrooms
-    with price in asending order then generate a folium map object"""
+    price, longitude, latitude, number of bedrooms, number of bathrooms
+    with price in ascending order then generate a folium map object"""
 
     def __init__(self, dataset):
         self.df = dataset
@@ -38,7 +38,7 @@ class MapVisualization:
         return [prices.quantile(p) for p in percentiles]
 
     def create_map(self):
-        """Creat the initial folium map with the location of the first record"""
+        """Create the initial folium map with the location of the first record"""
         lat_of_first_record = self.df.iloc[0]["latitude"]
         lon_of_first_record = self.df.iloc[0]["longitude"]
         return folium.Map(

@@ -337,8 +337,8 @@ class Daft:
 
     def set_student_accommodation_type(self, student_accommodation_type):
         """
-        Set the student accomodation type.
-        :param student_accommodation_type: StudentAccomodationType
+        Set the student accommodation type.
+        :param student_accommodation_type: StudentAccommodationType
         """
         if not isinstance(student_accommodation_type, StudentAccommodationType):
             raise DaftException(
