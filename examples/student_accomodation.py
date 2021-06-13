@@ -1,8 +1,8 @@
 from daftlistings import Daft, Location, SearchType
 
 daft = Daft()
-daft.set_location([Location.ASHTOWN_DUBLIN, Location.IFSC_DUBLIN])
-daft.set_search_type(SearchType.RESIDENTIAL_RENT)
+daft.set_location(Location.DUNDALK_INSTITUTE_OF_TECHNOLOGY_LOUTH)
+daft.set_search_type(SearchType.STUDENT_ACCOMMODATION)
 
 listings = daft.search()
 
